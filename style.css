@@ -1,0 +1,43 @@
+.grid {
+    position: relative;
+}
+
+.grid-item {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    /* Default to 2 columns */
+    width: 46%;
+}
+
+.grid-item.muuri-item-releasing {
+    z-index: 2;
+}
+
+.grid-item.muuri-item-dragging {
+    z-index: 3;
+    cursor: move;
+}
+
+.grid-item-icon {
+    margin: 10px auto;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background: #B9E888;
+    box-shadow: #9B9B9B 0px 2px 8px;
+    border-radius: 12px;
+}
+
+/* screen width 500px-999px: show 4 columns */
+@media only screen and (min-width: 500px) {
+    .grid-item {
+        width: 23%;
+    }
+}
+/* screen width more than 1000px: show 6 columns */
+@media only screen and (min-width: 1000px) {
+    .grid-item {
+        width: 15%;
+    }
+}
