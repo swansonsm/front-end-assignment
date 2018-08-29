@@ -1,4 +1,5 @@
 body {
+    min-height: 100vh;
     background: #FFFFFF;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     background-repeat: no-repeat;
@@ -54,10 +55,6 @@ body {
     background: #000000;
     box-shadow: #9B9B9B 0px 2px 8px;
     border-radius: 12px;
-}
-
-.main-content {
- min-height: 90vh;
 }
 
 footer {
