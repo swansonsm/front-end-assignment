@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Coding Assignment - Muuri</title>
+    <title>Front-End Assignment</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico?">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,49 +15,74 @@
 </head>
 <body>
 
-    <div class="container">
-
-        <h1>Front-End Developer Assignment</h1>
-        
-        <p>Build a responsive webpage that emulates the layout of icons on a smart phone home screen.
-            Use the attached mockup (layout.png) as a reference.  It should meet the following requirements:</p>
+    <div class="container main-content">
+        <div class="jumbotron"> 
+            <h1>Front-End Developer Assignment</h1>
             
-        <ul>
-            <li> Responsive layout: screen more than 1000px: show 6 columns, 500px-999px: show 4 columns, below 500px: show 2 columns</li>
-            <li>Icon should be draggable.  To drag an icon a user must click and hold for a second or so.</li>
-            <li>Dragging an icon into other icons should re-order the icons on the screen. </li>
-            <li>Use png's for icons, 80px x 80px.  Icons should be retina ready</li>
-            <li>Extra Credit: Add a CSS only wallpaper design.</li>
-        </ul>
+            <p>Build a responsive webpage that emulates the layout of icons on a smart phone home screen.
+                Use the attached mockup (layout.png) as a reference.  It should meet the following requirements:</p>
+                
+            <ul>
+                <li>Responsive layout: screen more than 1000px: show 6 columns, 500px-999px: show 4 columns, below 500px: show 2 columns</li>
+                <li>Icon should be draggable.  To drag an icon a user must click and hold for a second or so.</li>
+                <li>Dragging an icon into other icons should re-order the icons on the screen. </li>
+                <li>Use png's for icons, 80px x 80px.  Icons should be retina ready</li>
+                <li>Extra Credit: Add a CSS only wallpaper design.</li>
+            </ul>
+        </div>
 
         <div class="grid">
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>One</span>
+                <div class="grid-item-icon"><img src="/img/wave@2x.png" alt="Wave icon" height="80px" width="80px" /></div>
+                <span>Water Park</span>
             </div>
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>Two</span>
+                <div class="grid-item-icon"><img src="/img/chicken@2x.png" alt="Chicken icon" height="80px" width="80px" /></div>
+                <span>Animal Waste</span>
             </div>
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>Three</span>
+                <div class="grid-item-icon"><img src="/img/water@2x.png" alt="Water icon" height="80px" width="80px" /></div>
+                <span>Clean Water</span>
             </div>
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>Four</span>
+                <div class="grid-item-icon"><img src="/img/support@2x.png" alt="Support icon" height="80px" width="80px" /></div>
+                <span>Customer Support</span>
             </div>
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>Five</span>
+                <div class="grid-item-icon"><img src="/img/mobile@2x.png" alt="Mobile icon" height="80px" width="80px" /></div>
+                <span>Mobile Microsite</span>
             </div>
             <div class="grid-item">
-                <div class="grid-item-icon"></div>
-                <span>Six</span>
+                <div class="grid-item-icon" id="bitcoin"><img src="/img/bitcoin@2x.png" alt="Bitcoin icon" height="80px" width="80px" /></div>
+                <span>Bitcoin App</span>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-icon"><img src="/img/runner@2x.png" alt="Runner icon" height="80px" width="80px" /></div>
+                <span>CvilleRuns</span>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-icon"><img src="/img/shoe@2x.png" alt="Shoe icon" height="80px" width="80px" /></div>
+                <span>Shoe Coach</span>
             </div>
         </div>
-        
+
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="text-muted">Libraries/frameworks used include 
+                <a href="https://github.com/twbs/bootstrap" title="Bootstrap">Bootstrap</a>, 
+                <a href="https://github.com/web-animations/web-animations-js" title="Web Animations">Web Animations</a>, 
+                <a href="https://github.com/hammerjs/hammer.js/" title="hammer.js">hammer.js</a>, and
+                <a href="https://github.com/haltu/muuri" title="Muuri">Muuri.</a></div>
+            <div class="text-muted">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, 
+                <a href="http://www.freepik.com" title="Freepik">Freepik</a>, 
+                <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a>, 
+                <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a>, and
+                <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> 
+                 from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></div>
+        </div>
+    </footer>
 
 </body>
 </html>
